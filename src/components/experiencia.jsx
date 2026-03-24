@@ -4,6 +4,7 @@ function Experiencia(props) {
       <h3 className="text-lg font-bold text-gray-800">{props.cargo}</h3>
       <span className="text-sm text-blue-600 font-medium">{props.empresa}</span>
       <p className="text-gray-600 text-sm mt-1">{props.periodo}</p>
+      <p className="text-gray-600 text-sm mt-2">{props.descricao}</p>
     </div>
   );
 }

@@ -44,7 +44,7 @@ function App() {
           <main className="lg:col-span-2 p-8">
             <section id="experiencia">
               <h2 className="text-3xl font-bold text-gray-800 mb-6">Percurso Profissional</h2>
-              <Experiencia cargo="Estagiário" empresa="WFR" periodo="2025" />
+              <Experiencia cargo="Estagiário" empresa="WFR" periodo="2025" descricao="Apoio técnico no desenvolvimento e manutenção de sistemas informáticos, com foco na otimização de fluxos de trabalho internos." />
               <Experiencia cargo="Estagiário" empresa="Grupo Érre" periodo="2026" />
             </section>
 
