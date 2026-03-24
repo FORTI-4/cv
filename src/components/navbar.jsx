@@ -8,6 +8,7 @@ function Navbar() {
           <a href="#sobre" className="hover:text-blue-600 transition-colors">Sobre</a>
           <a href="#competencias" className="hover:text-blue-600 transition-colors">Competências</a>
           <a href="#experiencia" className="hover:text-blue-600 transition-colors">Experiência</a>
+          <a href="#extra" className="hover:text-blue-600 transition-colors">Info-Extra</a>
           <a href="#projetos" className="hover:text-blue-600 transition-colors">Projetos</a>
           <a href="#formulario" className="hover:text-blue-600 transition-colors">Formulário</a>
           <a href="#contacta" className="hover:text-blue-600 transition-colors">Contacta-me</a>

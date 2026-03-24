@@ -29,7 +29,7 @@ function App() {
             <br></br>
             <SkillBars />
             <br></br>
-            <Extra />
+            <section id="extra"><Extra /></section>
 
             <div className="mt-10 p-4 bg-blue-50 rounded-xl">
               <section id="contacta">
