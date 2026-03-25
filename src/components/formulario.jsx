@@ -39,15 +39,11 @@ function Formulario() {
             <input name="email" type="email" placeholder="Ex: joaosilva@gmail.com" onChange={handleChange} className="w-full p-2 rounded bg-slate-800 border border-slate-700" required />
           </div>
           <div className="md:col-span-2">
-            <label className="block text-sm mb-1">Telemóvel (Opcional)</label>
-            <input name="telemovel" type="tel" placeholder="Ex: 000 000 000" onChange={handleChange} className="w-full p-2 rounded bg-slate-800 border border-slate-700" />
-          </div>
-          <div className="md:col-span-2">
             <label className="block text-sm mb-1">Mensagem</label>
             <textarea name="mensagem" rows="4" placeholder="Mande a sua proposta" onChange={handleChange} className="w-full p-2 rounded bg-slate-800 border border-slate-700" required></textarea>
           </div>
           <button type="submit" className="md:col-span-2 bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold transition-all">
-            Enviar Proposta
+            Enviar Mensagem
           </button>
         </form>
       )}

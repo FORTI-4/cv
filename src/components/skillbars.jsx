@@ -1,11 +1,11 @@
 function SkillBars() {
   const skills = [
-    { nome: "HTML", nivel: 90, cor: "bg-orange-500" },
-    { nome: "JavaScript", nivel: 75, cor: "bg-amber-400" },
-    { nome: "CSS", nivel: 60, cor: "bg-sky-500" },
-    { nome: "Java", nivel: 85, cor: "bg-red-600" },
-    { nome: "MySQL", nivel: 75, cor: "bg-blue-800" },
-    { nome: "PHP", nivel: 60, cor: "bg-violet-500" }
+    { nome: "HTML", nivel: 75, cor: "bg-orange-500" },
+    { nome: "JavaScript", nivel: 55, cor: "bg-amber-400" },
+    { nome: "CSS", nivel: 50, cor: "bg-sky-500" },
+    { nome: "Java", nivel: 70, cor: "bg-red-600" },
+    { nome: "MySQL", nivel: 65, cor: "bg-blue-800" },
+    { nome: "PHP", nivel: 50, cor: "bg-violet-500" }
   ];
 
   return (
