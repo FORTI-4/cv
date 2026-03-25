@@ -35,7 +35,7 @@ function Hero() {
       </div>
 
       <div className="absolute bottom-10 animate-bounce text-zinc-500">
-        <CircleArrowDown size={67} />
+        <a href="#sobre"><CircleArrowDown size={67} /></a>
       </div>
     </section>
   );

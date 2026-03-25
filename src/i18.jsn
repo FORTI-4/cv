@@ -1,0 +1,46 @@
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    debug: true,
+    fallbackLng: 'pt',
+    interpolation: {
+      escapeValue: false,
+    },
+    resources: {
+      resources: {
+        pt: {
+            translation: {
+            about_title: "SOBRE MIM",
+            timeline_subtitle: "Linha do Tempo",
+            timeline_title: "Percurso",
+            skills_title: "Competências Técnicas",
+            projects_title: "Projetos",
+            project1_name: "Treino Freestyle Rap",
+            project1_description: "Um projeto realizado em Javafx...",
+            form_title: "Formulário",
+            footer_text: "Construído com React e Tailwind CSS."
+            }
+        },
+        en: {
+            translation: {
+            about_title: "ABOUT ME",
+            timeline_subtitle: "Timeline",
+            timeline_title: "Journey",
+            skills_title: "Technical Skills",
+            projects_title: "Projects",
+            project1_name: "Freestyle Rap Training",
+            project1_description: "A project developed in Javafx...",
+            form_title: "Form",
+            footer_text: "Built with React and Tailwind CSS."
+            }
+        }
+        }
+    }
+  });
+
+export default i18n;
