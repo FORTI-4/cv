@@ -40,7 +40,7 @@ function Navbar() {
             </button>
           </div>
           <a 
-            href="/cv-diogo.pdf" 
+            href={`${import.meta.env.BASE_URL}cv-diogo-pt.pdf`} 
             download 
             className="flex items-center gap-1 bg-blue-600 text-white px-5 py-2 rounded-full text-xs font-black uppercase tracking-widest hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
           >
