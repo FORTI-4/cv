@@ -44,21 +44,21 @@ function App() {
               <h3 className="text-4xl md:text-5xl font-black text-white">{t('experience_title')}</h3>
             </div>
             <a 
-              href="/cv-diogo.pdf" 
+              href={`${import.meta.env.BASE_URL}cv-diogo-pt.pdf`}
               download
               className="flex items-center gap-2 bg-zinc-900 border border-zinc-800 text-zinc-400 px-5 py-3 rounded-xl hover:text-white hover:border-blue-500 transition-all group"
               title="Download CV(PT)">
               <span className="text-sm font-bold">CV(PT)</span>
               <FileText size={18} className="group-hover:scale-110 transition-transform" /></a>
             <a 
-              href="/cv-diogo-espanhol.pdf" 
+              href={`${import.meta.env.BASE_URL}cv-diogo-es.pdf`}
               download
               className="flex items-center gap-2 bg-zinc-900 border border-zinc-800 text-zinc-400 px-5 py-3 rounded-xl hover:text-white hover:border-blue-500 transition-all group"
               title="Download CV(ES)">
               <span className="text-sm font-bold">CV(ES)</span>
               <FileText size={18} className="group-hover:scale-110 transition-transform" /></a>
             <a 
-              href="/cv-diogo-english.pdf" 
+              href={`${import.meta.env.BASE_URL}cv-diogo-en.pdf`}
               download
               className="flex items-center gap-2 bg-zinc-900 border border-zinc-800 text-zinc-400 px-5 py-3 rounded-xl hover:text-white hover:border-blue-500 transition-all group"
               title="Download CV(EN)">
