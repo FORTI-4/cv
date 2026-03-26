@@ -1,10 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import { Database, Terminal } from 'lucide-react';
 import { FiLayout } from "react-icons/fi";
 function Competencias() {
+  
+  const { t } = useTranslation();
+
   const categorias = [
     { title: "Frontend", icon: <FiLayout />, skills: ["React", "JS", "Tailwind", "HTML/CSS"], color: "text-blue-600" },
     { title: "Backend", icon: <Database />, skills: ["Java", "PHP", "Python", "MySQL"], color: "text-green-600" },
-    { title: "Ferramentas", icon: <Terminal />, skills: ["Git", "VS Code", "NetBeans"], color: "text-purple-600" }
+    { title: t('skills_subtitle'), icon: <Terminal />, skills: ["Git", "VS Code", "NetBeans"], color: "text-purple-600" }
   ];
 
   return (

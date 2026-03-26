@@ -1,6 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { CircleArrowDown } from 'lucide-react';
 
 function Hero() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="relative h-screen w-full flex flex-col items-center justify-center bg-zinc-950 text-zinc-100 px-6">
       
@@ -15,7 +19,7 @@ function Hero() {
         </h1>
         
         <p className="text-lg md:text-2xl text-zinc-400 max-w-2xl mx-auto font-light leading-relaxed">
-          Técnico de Informática & Sistemas
+          {t('hero_subtitle')}
         </p>
 
         <div className="mt-10 flex gap-4 justify-center">
@@ -23,13 +27,13 @@ function Hero() {
             href="#projetos" 
             className="bg-white text-black px-8 py-3 rounded-full font-bold hover:bg-zinc-200 transition-all active:scale-95"
           >
-            Ver Projetos
+            {t('hero_button1')}
           </a>
           <a 
             href="#contacto" 
             className="border border-zinc-700 px-8 py-3 rounded-full font-bold hover:bg-zinc-900 transition-all"
           >
-            Contacto
+            {t('hero_button2')}
           </a>
         </div>
       </div>

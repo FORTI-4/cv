@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Heart } from 'lucide-react'; 
 function Projetos({ nome, descricao, imagem }) {
+
   const [likes, setLikes] = useState(0);
 
   return (

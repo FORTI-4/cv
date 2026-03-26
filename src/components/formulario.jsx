@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import axios from 'axios';
 
 function Formulario() {
+
+  const { t } = useTranslation();
+
   const [status, setStatus] = useState({
     submitting: false,
     info: { error: false, msg: null }
@@ -49,7 +53,7 @@ function Formulario() {
 
   return (
     <section id="formulario" className="mt-12 p-8 bg-slate-900 text-white rounded-2xl shadow-xl">
-      <h2 className="text-2xl font-bold mb-6">Vamos conversar?</h2>
+      <h2 className="text-2xl font-bold mb-6">{t('form_subtitle')}</h2>
 
       {status.info.msg && (
         <div className={`p-4 mb-6 rounded-lg border ${status.info.error ? 'bg-red-500/20 border-red-500 text-red-400' : 'bg-green-500/20 border-green-500 text-green-400'}`}>
@@ -61,7 +65,7 @@ function Formulario() {
         <form onSubmit={handleOnSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
           
           <div className="md:col-span-1">
-            <label className="block text-sm mb-1">Nome</label>
+            <label className="block text-sm mb-1">{t('form_field1')}</label>
             <input 
               name="nome" 
               type="text" 
@@ -73,7 +77,7 @@ function Formulario() {
             />
           </div>
           <div className="md:col-span-1">
-            <label className="block text-sm mb-1">Email</label>
+            <label className="block text-sm mb-1">{t('form_field2')}</label>
             <input 
               name="email" 
               type="email" 
@@ -86,7 +90,7 @@ function Formulario() {
           </div>
 
           <div className="md:col-span-2">
-            <label className="block text-sm mb-1">Telemóvel(Opcional)</label>
+            <label className="block text-sm mb-1">{t('form_field3')}</label>
             <input 
               name="telemovel" 
               type="tel" 
@@ -98,11 +102,11 @@ function Formulario() {
           </div>
 
           <div className="md:col-span-2">
-            <label className="block text-sm mb-1">Mensagem</label>
+            <label className="block text-sm mb-1">{t('form_field4')}</label>
             <textarea 
               name="mensagem" 
               rows="4" 
-              placeholder="Mande a sua proposta" 
+              placeholder={t('form_field4_subtitle')} 
               value={formData.mensagem}
               onChange={handleOnChange}
               className="w-full p-2 rounded bg-slate-800 border border-slate-700 outline-none focus:border-blue-500 transition-colors" 

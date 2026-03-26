@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
 function SkillBars() {
+
+  const { t } = useTranslation();
+
   const skills = [
     { nome: "HTML", nivel: 75, cor: "bg-orange-500" },
     { nome: "JavaScript", nivel: 55, cor: "bg-amber-400" },
@@ -10,7 +14,7 @@ function SkillBars() {
 
   return (
     <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100  hover:shadow-md transition-shadow">
-      <h3 className="text-lg font-bold mb-5 text-gray-800">Nível Técnico</h3>
+      <h3 className="text-lg font-bold mb-5 text-gray-800">{t('skill_title')}</h3>
       <div className="space-y-5">
         {skills.map((s, index) => (
           <div key={index}>

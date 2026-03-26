@@ -1,18 +1,22 @@
+import { useTranslation } from 'react-i18next';
 import { Briefcase } from 'lucide-react';
 
 function Experiencia() {
+
+  const { t } = useTranslation();
+
   const experiencias = [
     {
-      cargo: "Estagiário de Programação",
+      cargo: t('experience_cargo1'),
       empresa: "Grupo Érre",
-      data: "2026 - Presente",
-      desc: "Focado na adaptação ao stack tecnológico da empresa e manutenção de plataformas digitais.",
+      data: t('experience_data1'),
+      desc: t('experience_desc1'),
     },
     {
-      cargo: "Estagiário de Programação",
+      cargo: t('experience_cargo1'),
       empresa: "WFR",
-      data: "2025",
-      desc: "Apoio no desenvolvimento de interfaces e otimização de fluxos internos.",
+      data: t('experience_data2'),
+      desc: t('experience_desc2'),
     }
   ];
 
