@@ -94,7 +94,7 @@ function Formulario() {
             <input 
               name="telemovel" 
               type="tel" 
-              placeholder="Ex: 912 345 678" 
+              placeholder="Ex: 000 000 000" 
               value={formData.telemovel}
               onChange={handleOnChange}
               className="w-full p-2 rounded bg-slate-800 border border-slate-700 outline-none focus:border-blue-500 transition-colors" 

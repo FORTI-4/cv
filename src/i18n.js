@@ -71,7 +71,7 @@ i18n
             nav_projects: "Projects",
             nav_form: "Form",
             nav_contact: "Contact",
-            download_cv: "Get CV",
+            download_cv: "DOWNLOAD CV",
             hero_subtitle: "Computer & Systems Technician",
             hero_button1: "View Projects",
             hero_button2: "Contact",
