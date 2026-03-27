@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 py-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <span className="font-black text-blue-600 text-xl tracking-tighter">
-          <a href="#inicio">DO.</a>
+          <a href="https://forti-4.github.io/cv/">DO.</a>
         </span>
         <div className="hidden md:flex gap-6 text-sm font-bold text-gray-500">
           <a href="#inicio" className="hover:text-blue-600 transition-colors">{t('nav_home')}</a>
