@@ -19,7 +19,6 @@ function Navbar() {
           <a href="#sobre" className="hover:text-blue-600 transition-colors">{t('nav_about')}</a>
           <a href="#experiencia" className="hover:text-blue-600 transition-colors">{t('nav_experience')}</a>
           <a href="#competencias" className="hover:text-blue-600 transition-colors">{t('nav_skills')}</a>
-          <a href="#extra" className="hover:text-blue-600 transition-colors">{t('nav_extra')}</a>
           <a href="#projetos" className="hover:text-blue-600 transition-colors">{t('nav_projects')}</a>
           <a href="#formulario" className="hover:text-blue-600 transition-colors">{t('nav_form')}</a>
           <a href="#contacto" className="hover:text-blue-600 transition-colors">{t('nav_contact')}</a>
