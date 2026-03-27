@@ -19,7 +19,7 @@ function App() {
   const { t } = useTranslation();
 
   return (
-    <div className="bg-white selection:bg-blue-100 overflow-x-hidden">
+    <div className="bg-white selection:bg-blue-100 ">
       <Navbar />
 
       <main>
